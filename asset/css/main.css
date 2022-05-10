@@ -106,7 +106,6 @@
     margin-bottom: 100px;
     height: 530px;
     width: 100%;
-    background: url('./asset/img/slide3.jpg') top center / cover no-repeat;
 }
 .slide-content {
     display: flex;
@@ -330,7 +329,6 @@
 .slide-hidden {
     height: 340px;
     margin-bottom: 100px;
-    background-image: url(/asset/img/sile-hidden-2.jpg);
     background-position: 50% 50%;
     background-size: contain;
     background-attachment: fixed;
