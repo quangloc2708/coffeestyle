@@ -1,0 +1,40 @@
+.blog-title {
+ padding: 10px 0;
+ border-bottom: 1px solid rgb(240, 234, 234);
+}
+
+.blog-title h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: black;
+}
+.blog-item {
+    padding-top: 40px;
+}
+.about-us {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.category-item {
+    padding: 10px 20px;
+    border-left: 2px solid #b8a59f;
+    margin-bottom: 5px;
+}
+.category-item a {
+    text-decoration: none;
+    color: rgb(66, 64, 64);
+}
+.category-item:hover {
+    background-color: #ebe3e1;
+    border-left: 2px solid #8a5343;
+}
+.auth {
+    display: flex;
+    align-items: center;
+}
+.auth img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 30px;
+}

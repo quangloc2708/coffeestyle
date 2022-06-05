@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/css/main.css">
     <link rel="stylesheet" href="./asset/css/grid.css">
     <link rel="stylesheet" href="./asset/css/toast.css">
     <link rel="stylesheet" href="./asset/css/responsive.css">
+    <link rel="stylesheet" href="./asset/css/products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
@@ -66,8 +72,8 @@
                 <div class="header-nav-list hidden menu-expanded" id="menu" >
                     <ul>
                         <div>
-                            <li class="header-nav-item active"><a href="index.html" class="">home</a></li>
-                            <li class="header-nav-item"><a href="products.html" class="">OUR PRODUCTS</a></li>
+                            <li class="header-nav-item "><a href="index.html" class="">home</a></li>
+                            <li class="header-nav-item active"><a href="products.html" class="">OUR PRODUCTS</a></li>
                             <li class="header-nav-item"><a href="blog.html" class="">BLOG</a></li>
                             <li class="header-nav-item"><a href="#" class="">ABOUT</a></li>
                             <li class="header-nav-item"><a href="#" class="">CONTACT</a></li>
@@ -93,63 +99,76 @@
         </div>
 
         <div id="container">
-            <div class="slider" style=" background: url('./asset/img/slide3.jpg')top center / cover no-repeat;">
+    
                 <div class="grid wide">
-                    <div class="slide-content">
-                        <div class="text-content">
-                            <p class="text-1">BEST PLACE TO BUY DESIGN</p>
-                            <h2 class="text-heading">Coffee Mugs</h2>
-                            <p class="text-2">The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</p>
-                            <button onclick="showSuccessToast()">EXPLORE OUR PRODUCTS</button>
-                        </div>
-                    </div>
+                    <div class="category-headline">
+                        <h2>Our Products</h2>
+                        <p>Even the all-powerful Pointing has no control about the blind texts.</p>
                 </div>
             </div>
             <div class="grid wide">
-                <div class="content">
-                    <h3>Even the all-powerful Pointing has no control about the blind texts.</h3>
-                    <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no 
-                        control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem
-                         Ipsum decided to leave for the far World of Grammar.</p>
-                    <a href="" class="">Read the full story</a>
-                </div>
-                <div class="featured featured-1">
-                    <div class="featured-line"></div>
-                    <div class="featured-text"><p>FEATURED MUGS</p></div>
-                    <div class="featured-line"></div>
-                </div>
-                <div class="row">
-                    <div class="col l-6 m-6 c-12">
-                        <div class="products">
-                            <div class="product-position">
-                                <a href="" class="">
-                                    <div class="product-img" style="background: url('./asset/img/sp1.jpg')top center / cover no-repeat;"></div>
-                                    
-                                </a>
-                                <div onclick =" showAddProductToast()" class="explore-product"><p>EXPLORE MUG</p></div>
-                            </div>
-                            <div class="product-name"><p>Pink Premium Ceramic</p></div>
-                            <div class="product-price"><p>$ 99.00 USD</p></div>
-                        </div>
-                    </div>
-                    <div class="col l-6 m-6 c-12">
-                        <div class="products">
-                            <div class="product-position">
-                                <a href="" class="">
-                                    <div class="product-img" style="background: url('./asset/img/sp2.jpg')top center / cover no-repeat;"></div>
-                                    <div onclick = "showAddProductToast()" class="explore-product"><p>EXPLORE MUG</p></div>
-                                    <div class="product-sale"><p>SALE</p></div>
-                                </a>
-                            </div>
-                            <div class="product-name"><p>Golden Designers Mug</p></div>
-                            <div class="product-price"><p><span>$ 99.00 USD</span> $ 50.00 USD</p></div>
-                        </div>
-                    </div>
-                </div>
                 <div class="featured featured-2">
-                    <div class="featured-line"></div>
-                    <div class="featured-text"><p>MORE PRODUCTS</p></div>
-                    <div class="featured-line"></div>
+                    <div class="featured-text">
+                        <div class="category-wrap ">
+                            <a href="">ALL PRODUCTS</a>
+                            <div class="category-list">
+                               <div class="category-item"> <a href="">COFFEE MUGS</a></div>
+                               <div class="category-item"> <a href="">OTHERS</a></div>
+                               <div class="category-item"> <a href="">PREMIUM</a></div>
+                               <div class="category-item"> <a href="">TEA MUGS</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-list">
+                    <div class="products-slide">
+                        <div class="row">
+                            <div class="col l-6 m-6 c-12">
+                                <div class="products">
+                                    <div class="product-position">
+                                        <a href="" class="">
+                                            <div class="more-product-img product-img" style="background: url('./asset/img/store1.jpg')top center / cover no-repeat;"></div>
+                                            <div onclick = "showAddProductToast()" class="explore-product"><p>READ THE FULL STORY</p></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <div class="slide-content-2 slide-content">
+                                    <div class="text-content text-content-2">
+                                        <p>NEW ARTICLE IS LIVE</p>
+                                        <h2>Health Check: why do I get a headache when I haven't had my coffee?</h2>
+                                        <p>Caffeine constricts the blood vessels around the brain, so once you stop drinking coffee for a long time, the blood vessels will dilate.</p>
+                                        <button>READ THE FULL STORY</button>
+                                    </div>
+                                </div>
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="products-slide">
+                        <div class="row">
+                            <div class="col l-6 m-6 c-12">
+                                <div class="products">
+                                    <div class="product-position">
+                                        <a href="" class="">
+                                            <div class="more-product-img product-img" style="background: url('./asset/img/store2.jpg')top center / cover no-repeat;"></div>
+                                            <div onclick = "showAddProductToast()" class="explore-product"><p>READ THE FULL STORY</p></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <div class="slide-content-2 slide-content">
+                                    <div class="text-content text-content-2">
+                                        <p>NEW ARTICLE IS LIVE</p>
+                                        <h2>Health Check: why do I get a headache when I haven't had my coffee?</h2>
+                                        <p>Caffeine constricts the blood vessels around the brain, so once you stop drinking coffee for a long time, the blood vessels will dilate.</p>
+                                        <button>READ THE FULL STORY</button>
+                                    </div>
+                                </div>
+                            </div>       
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col l-4 m-6 c-12">
@@ -297,54 +316,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide-hidden" style="background-image: url(./asset/img/sile-hidden-2.jpg);"></div>
-            <div class="grid wide">
-                <div class="featured">
-                    <div class="featured-line"></div>
-                    <div class="featured-text"><p>BEHIND THE MUGS, LIFESTYLE STORIES</p></div>
-                    <div class="featured-line"></div>
-                </div>
-                <div class="row">
-                    <div class="col l-4 m-6 c-12">
-                        <div class="products">
-                            <div class="product-position">
-                                <a href="" class="">
-                                    <div class="more-product-img product-img" style="background: url('./asset/img/store1.jpg')top center / cover no-repeat;"></div>
-                                    <div onclick = "showAddProductToast()" class="explore-product"><p>READ THE FULL STORY</p></div>
-                                </a>
-                            </div>
-                            <div class=" story story-heading"><p>Health Check: why do I get a headache when I haven't had my coffee?</p></div>
-                            <div class="story story-cover"><p>Caffeine constricts the blood vessels around the brain, so once you stop drinking coffee for a long time, the blood vessels will dilate.</p></div>
-                            <div class="story story-date"><p>MAY 9, 2022</p></div>
-                        </div>   
-                    </div>
-                    <div class="col l-4 m-6 c-12">
-                        <div class="products">
-                            <div class="product-position">
-                                <a href="" class="">
-                                    <div class="more-product-img product-img" style="background: url('./asset/img/store2.jpg')top center / cover no-repeat;"></div>
-                                    <div onclick = "showAddProductToast()" class="explore-product"><p>READ THE FULL STORY</p></div>
-                                </a>
-                            </div>
-                            <div class=" story story-heading"><p>Recent research suggests that heavy coffee drinkers map reap health benefits.</p></div>
-                            <div class="story story-cover"><p>Coffee is full of substances that help protect against common health problems, especially in women, including Alzheimer's disease and metabolic cardiovascular diseases including hypertension, coronary heart disease, dyslipidemia...</p></div>
-                            <div class="story story-date"><p>MAY 10, 2022</p></div>
-                        </div>
-                    </div>
-                    <div class="col l-4 m-6 c-12">
-                        <div class="products">
-                            <div class="product-position">
-                                <a href="" class="">
-                                    <div class="more-product-img product-img" style="background: url('./asset/img/store3.jpg')top center / cover no-repeat;"></div>
-                                    <div onclick = "showAddProductToast()" class="explore-product"><p>READ THE FULL STORY</p></div>
-                                </a>
-                            </div>
-                            <div class=" story story-heading"><p>How long dose a cup op coffee keep ypu awake?</p></div>
-                            <div class="story story-cover"><p>Caffeine has a half-life of around four to six hours, which means that your body will process half the amount of caffeine you consumed in that time.</p></div>
-                            <div class="story story-date"><p>MAY 11, 2022</p></div>
-                        </div>
-                    </div>
-                </div>
+           
             </div>
             <div class="sign-up">
                 <div class="featured featured-sign-up">
@@ -424,5 +396,19 @@
             </div>
         </div>
     </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./slick.js"></script>
 </body>
 </html>

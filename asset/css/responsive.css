@@ -21,6 +21,8 @@
     }
     #header {
         height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     #header .header-nav {
         align-items: flex-start;
@@ -39,6 +41,7 @@
 
 /*Tablet*/
 @media (min-width: 740px) and(max-width:1023px) {
+   
 }
 
 /*Mobile */
@@ -49,4 +52,15 @@
     justify-content: center;
     align-items: center;
 }
+    .toast {
+        min-width: 200px;
+        max-width: 450px;
+        padding: 0;
+    }
+    #toast {
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        z-index: 999999;
+      }
 }

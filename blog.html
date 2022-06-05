@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="./asset/css/toast.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <link rel="stylesheet" href="./asset/css/products.css">
+    <link rel="stylesheet" href="./asset/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="icon" href="./asset/img/avt.jpg"  sizes="16x16">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+
+    <title>Quangloc-CoffeeStyle</title>
+    <script src="./main.js" type="text/javascript"async></script>
+    <script src="./toast.js" ></script>
+</head>
+<body>
+    <div id="toast"></div>
+    <script>
+        
+        function showSuccessToast() {
+            toast({
+                title: 'Success',
+                message: 'Bạn đã đăng ký thành công!',
+                type: 'success',
+                duration: 5000
+            });
+        }
+        function showInfoToast() {
+            toast({
+                title: '',
+                message: 'Chưa có sản phẩm nào trong giỏ hàng.',
+                type: 'info',
+                duration: 5000
+            });
+        }
+
+        function showAddProductToast() {
+            toast({
+                title: '',
+                message: 'Đã thêm sản phẩm vào trong giỏ hàng.',
+                type: 'success',
+                duration: 5000
+            });
+        }
+       
+    </script>
+
+
+
+    <div class="app">
+        <div id="header">
+            <div class="header-nav">
+                <div class="header-logo">
+                    <a href="#" class="">
+                        <div class="logo-img"><img src="./asset/img/logo.png" alt=""></div>
+                    </a>
+                </div>
+                <div class="header-nav-list hidden menu-expanded" id="menu" >
+                    <ul>
+                        <div>
+                            <li class="header-nav-item "><a href="index.html" class="">home</a></li>
+                            <li class="header-nav-item"><a href="products.html" class="">OUR PRODUCTS</a></li>
+                            <li class="header-nav-item active"><a href="blog.html" class="">BLOG</a></li>
+                            <li class="header-nav-item"><a href="#" class="">ABOUT</a></li>
+                            <li class="header-nav-item"><a href="#" class="">CONTACT</a></li>
+                            <li class="header-nav-item"><a href="#" class="">STYLEGUIDE</a></li>
+
+                        </div>
+                    </ul>
+                </div>
+                <div onclick="showInfoToast()" class="header-cart">
+                    <div class="header-cart-icon">
+                        <img src="./asset/img/cart.png" alt="">
+                    </div>
+                    <div class="header-nav-item"><p>CART</p></div>
+                    <div class="header-nav-item number-of-orders"><p>   0</p></div>
+                    <div class="" id="menu-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                          </svg>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <div id="container">
+    
+                <div class="grid wide">
+                    <div class="category-headline">
+                        <h2>Read coffee stories on our Blog</h2>
+                        <p>Even the all-powerful Pointing has no control about the blind texts.</p>
+                </div>
+            </div>
+            <div class="grid wide">
+                <div class="featured featured-2">
+                    <div class="featured-line"></div>
+                    <div class="featured-text"><p>FEATTURED POST</p></div>
+                    <div class="featured-line"></div>
+                </div>
+                <div class="row">
+                    <div class="col l-6 m-6 c-12">
+                        <div class="products">
+                            <div class="product-position">
+                                <a href="" class="">
+                                    <div class="more-product-img product-img" style="background: url('./asset/img/store1.jpg')top center / cover no-repeat;"></div>
+                                    <div onclick = "showAddProductToast()" class="explore-product"><p>READ THE FULL STORY</p></div>
+                                </a>
+                            </div>
+                            <div class=" story story-heading"><p>Health Check: why do I get a headache when I haven't had my coffee?</p></div>
+                            <div class="story story-cover"><p>Caffeine constricts the blood vessels around the brain, so once you stop drinking coffee for a long time, the blood vessels will dilate.</p></div>
+                            <div class="story story-date"><p>MAY 9, 2022</p></div>
+                        </div> 
+                    </div>
+                    <div class="col l-6 m-6 c-12">
+                        <div class="products">
+                            <div class="product-position">
+                                <a href="" class="">
+                                    <div class="more-product-img product-img" style="background: url('./asset/img/store3.jpg')top center / cover no-repeat;"></div>
+                                    <div onclick = "showAddProductToast()" class="explore-product"><p>READ THE FULL STORY</p></div>
+                                </a>
+                            </div>
+                            <div class=" story story-heading"><p>How long dose a cup op coffee keep ypu awake?</p></div>
+                            <div class="story story-cover"><p>Caffeine has a half-life of around four to six hours, which means that your body will process half the amount of caffeine you consumed in that time.</p></div>
+                            <div class="story story-date"><p>MAY 11, 2022</p></div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="featured">
+                    <div class="featured-line"></div>
+                    <div class="featured-text"><p>BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</p></div>
+                    <div class="featured-line"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col l-8 m-12 c-12">
+                        <div class="blog-title"><h2>Lastest Posts</h2></div>
+                        <div class="blog-item">
+                            <div class="row">
+                                <div class="col l-6 m-12-m-12">
+                                    <div class="products">
+                                        <div class="product-position">
+                                            <a href="" class="">
+                                                <div class="more-product-img product-img" style="background: url('./asset/img/store1.jpg')top center / cover no-repeat;"></div>
+                                                <div onclick = "showAddProductToast()" class="explore-product"><p>READ THE FULL STORY</p></div>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12-m-12">
+                                    <div class=" story story-heading"><p>Health Check: why do I get a headache when I haven't had my coffee?</p></div>
+                                        <div class="story story-cover"><p>Caffeine constricts the blood vessels around the brain, so once you stop drinking coffee for a long time, the blood vessels will dilate.</p></div>
+                                        <div class="story story-date"><p>MAY 9, 2022</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-item">
+                            <div class="row">
+                                <div class="col l-6 m-6-m-6">
+                                    <div class="products">
+                                        <div class="product-position">
+                                            <a href="" class="">
+                                                <div class="more-product-img product-img" style="background: url('./asset/img/store2.jpg')top center / cover no-repeat;"></div>
+                                                <div onclick = "showAddProductToast()" class="explore-product"><p>READ THE FULL STORY</p></div>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6-m-6">
+                                    <div class=" story story-heading"><p>More coffee, lower death risk?</p></div>
+                                        <div class="story story-cover"><p>Caffeine constricts the blood vessels around the brain, so once you stop drinking coffee for a long time, the blood vessels will dilate.</p></div>
+                                        <div class="story story-date"><p>MAY 9, 2022</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-item">
+                            <div class="row">
+                                <div class="col l-6 m-6-m-6">
+                                    <div class="products">
+                                        <div class="product-position">
+                                            <a href="" class="">
+                                                <div class="more-product-img product-img" style="background: url('./asset/img/store4.jpg')top center / cover no-repeat;"></div>
+                                                <div onclick = "showAddProductToast()" class="explore-product"><p>READ THE FULL STORY</p></div>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6-m-6">
+                                    <div class=" story story-heading"><p>Will drinking coffee prolong your life?</p></div>
+                                        <div class="story story-cover"><p>Caffeine constricts the blood vessels around the brain, so once you stop drinking coffee for a long time, the blood vessels will dilate.</p></div>
+                                        <div class="story story-date"><p>MAY 9, 2022</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-item">
+                            <div class="row">
+                                <div class="col l-6 m-6-m-6">
+                                    <div class="products">
+                                        <div class="product-position">
+                                            <a href="" class="">
+                                                <div class="more-product-img product-img" style="background: url('./asset/img/store5.jpg')top center / cover no-repeat;"></div>
+                                                <div onclick = "showAddProductToast()" class="explore-product"><p>READ THE FULL STORY</p></div>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6-m-6">
+                                    <div class=" story story-heading"><p>Recent research suggests that heavy coffee drinkers may reap health benefits.</p></div>
+                                        <div class="story story-cover"><p>Caffeine constricts the blood vessels around the brain, so once you stop drinking coffee for a long time, the blood vessels will dilate.</p></div>
+                                        <div class="story story-date"><p>MAY 9, 2022</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-12 c-12">
+                        <div class="blog-title"><h2>About Us</h2></div>
+                        <div class="blog-item">
+                            <div class="content about-us">
+                                <div class="header-logo"><div class="logo-img"><img src="./asset/img/logo.png" alt=""></div></div>
+                                <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                <a href="" class="">Read the full story</a>
+                            </div>
+                        </div>
+                        <div class="blog-title"><h2>Category</h2></div>
+                        <div class="blog-item">
+                            <div class=" about-us">
+                                <div class="category-item" ><a href="index.html">Baristar</a></div>
+                                <div class="category-item" ><a href="products.html">Coffee</a></div>
+                                <div class="category-item" ><a href="blog.html">Lifestyle</a></div>
+                                <div class="category-item" ><a href="products.html">Mugs</a></div>
+                                
+                            </div>
+                        </div>
+                        <div class="blog-title"><h2>Authors</h2></div>
+                        <div class="blog-item">
+                            <div class="about-us">
+                                <div class="category-item" >
+                                    <a href="about.html">
+                                        <div class="auth">
+                                            <div><img src="./asset/img/auth1.jpg" alt=""></div>
+                                            <div>Freg Gleason</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="category-item" >
+                                    <a href="about.html">
+                                        <div class="auth">
+                                            <div><img src="./asset/img/auth2.jpg" alt=""></div>
+                                            <div>Isabel Hamill</div>
+                                        </div>
+                                    </a>
+                                </div><div class="category-item" >
+                                    <a href="about.html">
+                                        <div class="auth">
+                                            <div><img src="./asset/img/auth3.jpg" alt=""></div>
+                                            <div>Maurice Helman</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+           
+            </div>
+            <div class="sign-up">
+                <div class="featured featured-sign-up">
+                    <div class="featured-line"></div>
+                    <div class="featured-text"><p>SIGN UP AND GET FREE COFFEE BAGS</p></div>
+                    <div class="featured-line"></div>
+                </div>
+                <div class="sign-up-centter">
+                    <div class="coffee-update"><h2>Coffee Updates</h2></div>
+                    <div class="sign-up-input">
+                        <input type="text" placeholder="CUSTOMER@COFFEESTYLE.COM">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-4 c-6">
+                        <div class="footer-1">
+                            <div class="footer-list">
+                                <img src="./asset/img/logo.png" alt="">
+                                
+                            </div>
+                            <div class="footer-item">
+                                <div><p>Delivering the best coffee life since 1996. From coffee geeks to the real ones.</p></div>
+                                <div><p>CoffeeStyle Inc. © 1996</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="footer-2">
+                            <div class="footer-1">
+                                <div class="footer-list">
+                                
+                                    <div><p>MENU</p></div>
+                                </div>
+                                <div class="footer-item">
+                                    <a href=""><p>Home</p></a>
+                                    <a href=""><p>Our products</p></a>
+                                    <a href=""><p>About</p></a>
+                                    <a href=""><p>Contact</p></a>
+                                    <a href=""><p>Styleguide</p></a>
+                                </div>
+                                
+                            </div>
+                            <div class="footer-1">
+                                <div class="footer-list">
+                                
+                                    <div><p>FOLLOW</p></div>
+                                </div>
+                                <div class="footer-item">
+                                    <a href=""><p>Facebook</p></a>
+                                    <a href=""><p>Instagram</p></a>
+                                    <a href=""><p>Pinterset</p></a>
+                                    <a href=""><p>Twitter</p></a>
+                                    <a href=""><p>Tiktok</p></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-0">
+                        <div class="footer-1">
+                            <div class="footer-list">
+                                <div><p>CONTACT US</p></div>
+                            </div>
+                            <div class="footer-item">
+                                <div><p>We're Always Happy to Help</p></div>
+                                <div class=""> <p>Powered by Webflow</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./slick.js"></script>
+</body>
+</html>

@@ -1,6 +1,7 @@
 #header {
     padding: 20px 0 20px 0;
     height: 80px;
+
 }
 .header-nav {
     display: flex;
@@ -16,13 +17,15 @@
 }
 .header-nav-list {
     background-color: white;
+
 }
 .header-nav-list ul {
     margin: 0;
+    position: relative;
 }
 .header-nav-list ul li  {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-right: 30px;
     position: relative;
 }
@@ -31,7 +34,7 @@
     color: rgb(29, 31, 46)
 }
 .header-nav-item {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     opacity: 0.6;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -46,16 +49,14 @@
 .header-nav-item:hover {
     opacity: 1;
 }
-.header-nav-item:nth-child(1) {
-    opacity: 1;
-}
+
 .header-cart {
     display: inline-flex;
     align-items: center;
     position: relative;
 }
 .header-cart .header-nav-item p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 0;
     margin-right: 8px;
 }
@@ -83,8 +84,8 @@
     width: 20px;
     background-color: orange;
     opacity: 0.5;
-    top: -1px;
-    right: 4.5px;
+    top: -0.5px;
+    right: 4px;
     border-radius: 50%;
 }
 .header-nav-list ul li::before {
@@ -93,7 +94,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 2px;
+    height: 3px;
     background-color: #a25f4b;
     transform: scaleX(0);
     transition: transform 300ms ease-in-out;
@@ -101,6 +102,10 @@
 .header-nav-list ul li:hover::before {
     transform: scaleX(1);
 }
+
+.header-nav-list ul .active {
+    opacity: 1;
+  }
 
 .slider {
     margin-bottom: 100px;
@@ -119,28 +124,21 @@
 }
 .slide-content h2 {
     font-size: 4rem;
-    animation: FadeIn ease-in-out 2s;
+    
     color: white;
 }
-.text-1 {
-    animation: FadeIn ease-in-out 1s;
-}
-.text-2 {
-    animation: FadeIn ease-in-out 3s;
-}
+
 .slide-content p:nth-child(1) {
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 2px
 }
 .text-content button {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     height: 40px;
     width: 190px;
     margin-top: 70px;
     cursor: pointer;
-    transition: transform ease-in 1s;
-    transform: translateY(-50px);
 }
 .content {
     justify-content: center;
@@ -149,7 +147,7 @@
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
-    margin: 0 20px 80px 20px;
+    margin: 0 0px 80px 0px;
 }
 .content h3 {
     font-size: 2.5rem;
@@ -188,6 +186,7 @@
     justify-content: center;
     text-align: center;
     margin-bottom: 80px;
+    width: 100%;
 }
 .featured-line {
     width: 30px;
@@ -198,7 +197,7 @@
     margin: 0 10px 0 10px;
 }
 .featured-text p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color:  rgba(29, 31, 46, 0.7);
     letter-spacing: 2px;
@@ -216,12 +215,10 @@
 }
 .product-position {
     position: relative;
-    transition: transform ease-in 1s;
-    transform: translateY(-20px);
 }
 .explore-product {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 22px;
     padding: 10px 24px 10px 24px;
     margin-bottom: 20px;
@@ -233,7 +230,7 @@
     animation: FadeIn ease-in 0.3s;
 }
 .explore-product p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: black;
     margin: auto;
 }
@@ -256,7 +253,7 @@
     justify-content: center;
 }
 .product-name p, .product-price p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: 0;
     color:  rgba(29, 31, 46, 0.9);
 }
@@ -336,7 +333,7 @@
 }
 .story p {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: rgba(29, 31, 46, 0.9);
     line-height: 3rem;
     padding: 0 20px 0 20px;
